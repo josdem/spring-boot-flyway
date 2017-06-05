@@ -19,4 +19,5 @@ class Person {
 
   @Column(nullable = false)
   String lastname
+  
 }
