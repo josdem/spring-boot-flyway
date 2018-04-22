@@ -4,4 +4,4 @@ CREATE TABLE `person` (
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
