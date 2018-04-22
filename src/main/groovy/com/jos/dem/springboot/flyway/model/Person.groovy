@@ -1,4 +1,4 @@
-package com.jos.dem.flyway.model
+package com.jos.dem.springboot.flyway.model
 
 import static javax.persistence.GenerationType.AUTO
 

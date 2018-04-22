@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.3.RELEASE'
+		springBootVersion = '1.5.12.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -11,7 +11,7 @@ buildscript {
 }
 
 plugins {
-  id "org.flywaydb.flyway" version "4.2.0"
+  id "org.flywaydb.flyway" version "5.0.7"
 }
 
 flyway {
