@@ -1,23 +1,37 @@
+buildscript {
+    dependencies {
+        classpath 'org.flywaydb:flyway-mysql:9.8.1'
+    }
+}
+
 plugins {
-	id 'java'
-	id 'org.springframework.boot' version '2.7.7'
-	id 'io.spring.dependency-management' version '1.1.0'
+    id 'java'
+    id 'org.springframework.boot' version '2.7.7'
+    id "org.flywaydb.flyway" version "9.8.1"
+    id 'io.spring.dependency-management' version '1.1.0'
 }
 
 group = 'com.jos.dem.springboot.flyway'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
+flyway {
+    url = 'jdbc:mysql://localhost:3306/flyway_demo'
+    user = 'flywayUser'
+    password = 'flyw4yDB.D0'
+}
+
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'mysql:mysql-connector-java'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }
