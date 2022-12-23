@@ -17,8 +17,8 @@ sourceCompatibility = '17'
 
 flyway {
     url = 'jdbc:mysql://localhost:3306/flyway_demo'
-    user = 'flywayUser'
-    password = 'flyw4yDB.D0'
+    user = 'databaseUser'
+    password = 'databasePassword'
 }
 
 repositories {
