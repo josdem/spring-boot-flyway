@@ -6,8 +6,12 @@ You know the benefits using version of control in software development such as [
 #### To run the project
 
 ```bash
-gradle bootRun
+gradle bootRun -Dflyway.user=${username} -Dflyway.password=${pawword}
 ```
+
+where:
+- `${username}` is the database username
+- `${password}` is the database password
 
 #### Read this as reference:
 
