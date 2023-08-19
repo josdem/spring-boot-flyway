@@ -1,7 +1,7 @@
 name: Gradle and Junit5
 on:
   push:
-    branches: [ "master", "feature/2" ]
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 permissions:
